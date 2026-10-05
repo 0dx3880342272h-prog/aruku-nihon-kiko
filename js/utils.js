@@ -1,0 +1,5 @@
+export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export const km=m=>(m/1000).toLocaleString('ja-JP',{minimumFractionDigits:1,maximumFractionDigits:1});
+export function position(course,meters){const m=Math.min(Math.max(0,meters),Math.round(course.totalKm*1000)),p=course.points;let i=0;while(i+1<p.length&&Math.round(p[i+1].km*1000)<=m)i++;const a=p[i],b=p[i+1];const t=b?(m-a.km*1000)/((b.km-a.km)*1000):1;return {i,a,b,t,meters:m,lat:b?a.lat+(b.lat-a.lat)*t:a.lat,lon:b?a.lon+(b.lon-a.lon)*t:a.lon,remaining:b?Math.max(0,Math.round(b.km*1000-m)):0}}
+export async function json(url){const r=await fetch(url);if(!r.ok)throw Error(`${url} を読み込めません（${r.status}）。`);return r.json()}
+export const link=(url,label)=>`<a href="${esc(/^https?:\/\//.test(url)?url:'#')}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`;
