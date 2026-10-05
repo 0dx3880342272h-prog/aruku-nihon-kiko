@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "imageAudit": {
+    "count": 71,
+    "fail": []
+  },
+  "walkerMovesLeft": true,
+  "interpolation": "halfway between points",
+  "arrival": true,
+  "prereading": true,
+  "offlineBasho": true,
+  "legacyImportPreservesBasho": true,
+  "storageFailureBanner": true
+}
