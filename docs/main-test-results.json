@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "browser": "145.0.7632.6",
+  "device": "Pixel 7 emulation",
+  "widths": [
+    320,
+    360,
+    412
+  ],
+  "tests": [
+    "legacy migration preserves source",
+    "independent course storage",
+    "add/edit/delete",
+    "reload persistence",
+    "all 102 readings",
+    "original text lazy load",
+    "63 poem entries",
+    "47 prefectures",
+    "68 and 82 markers",
+    "JSON export",
+    "duplicate merge",
+    "invalid record rejection",
+    "responsive 5 screens"
+  ],
+  "pageErrors": []
+}
