@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "browser": "145.0.7632.6",
+  "device": "Pixel 7 emulation",
+  "widths": [
+    320,
+    360,
+    412
+  ],
+  "pointsWithDecodedImages": 150,
+  "readingsWithCorrectPlaceImage": 102,
+  "courseSpecificIcons": true,
+  "recordsPersist": true,
+  "independentCourses": true,
+  "imageFailureFallback": true,
+  "pageErrors": []
+}
