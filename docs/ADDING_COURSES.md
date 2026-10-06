@@ -45,7 +45,7 @@
 
 ### imagesの各要素
 
-`id, src, title, kind, author, source, license, licenseUrl, modification, width, height, sizeBytes`。`highres`は任意の高精細版リンク。`kind`が「現在」で始まる画像は地点の現代写真として本文の上に出ます。原作挿絵・原作本文頁・後世の絵・参考風景画は正しく区別してください。
+`id, src, title, kind, author, source, license, licenseUrl, modification, width, height, sizeBytes`。`highres`は任意の高精細版リンク。地点の `imageId` に指定した画像は、種別を問わず本文の上に出ます。地点の `imageNote` に、地域参考や年代の違いなどを明記します。原作挿絵・原作本文頁・後世の絵・参考風景画は正しく区別してください。
 
 画像は個別WebP、通常1400px以下・500KB以下を目安とします。画像の出典ページと利用条件を確認して保存し、`docs/IMAGE_LICENSES.md`も更新します。Base64埋め込みは使いません。
 
